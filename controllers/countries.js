@@ -26,7 +26,10 @@ router.get('/', (req, res) => {
     })
 })
 
-//N
+//New
+router.get('/new', (req, res) => {
+    res.render('new.ejs');
+})
 
 //D
 

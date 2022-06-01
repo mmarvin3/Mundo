@@ -9,12 +9,13 @@
 </head>
 <body>
     <h1>Mundo</h1>
+    <a href="/countries/new">Add Country</a>
     <ul>
         <% country.forEach(country=> { %>
             <li>
                 <a href="/countries/<%=country._id%>"><%=country.name; %></a></br>
                 <a href="/countries/<%=country._id%>"><img src="<%=country.img%>" alt=""></a></br>
-                <%=country.capital;%>
+                
             </li></br>
             <% }) %>
     </ul>
