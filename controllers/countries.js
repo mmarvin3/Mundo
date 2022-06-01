@@ -38,7 +38,19 @@ router.delete('/:id', (req, res) => {
     })
 })
 
-//U
+//Update
+router.put("/:id", (req, res) => {
+    Country.findByIdAndUpdate(
+        req.params.id,
+        req.body,
+        {
+            new: true,
+        },
+        (error, updateCountry) => {
+            res.redirect(`/countries/${req.params.id}`)
+        }
+    )
+})
 
 //Create
 router.post('/', (req, res) => {
