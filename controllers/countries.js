@@ -26,5 +26,24 @@ router.get('/', (req, res) => {
     })
 })
 
+//N
+
+//D
+
+//U
+
+//C
+
+//E
+
+//Show
+router.get('/:id', (req, res) => {
+    Country.findById(req.params.id, (err, foundCountry) => {
+        res.render('show.ejs', {
+            country: foundCountry,
+        })
+    })
+})
+
 //export the router object using module.exports
 module.exports = router;
