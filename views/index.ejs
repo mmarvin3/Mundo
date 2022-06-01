@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo</title>
+
+</head>
+<body>
+    <h1>Mundo</h1>
+    <ul>
+        <% country.forEach(country=> { %>
+            <li>
+                <a href="/countries/<%=country._id%>"><%=country.name; %></a></br>
+                <a href="/countries/<%=country._id%>"><img src="<%=country.img%>" alt=""></a></br>
+                <%=country.capital;%>
+            </li></br>
+            <% }) %>
+    </ul>
+</body>
+</html>
