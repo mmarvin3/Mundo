@@ -1,6 +1,7 @@
 //Dependencies
 const express = require("express");
 const Country  = require('../models/country')
+console.log(Country, "here is the country info")
 
 //Initialize the router object
 const router = express.Router();

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,27 @@
     <link rel="stylesheet" href="/style.css">
 
 </head>
+
 <body class="container">
-    <h1 class="header">Mundo</h1>
-    <a href="/countries/new">Add Country</a>
-    <ul>
-        <% country.forEach(country=> { %>
-            <li>
-                <a href="/countries/<%=country._id%>"><%=country.name; %></a></br>
-                <a href="/countries/<%=country._id%>"><img src="<%=country.img%>" alt=""></a></br>
-                
-            </li></br>
-            <% }) %>
-    </ul>
+    <div class="banner">
+        <header class="nav-header">
+            <h1 class="title-header">Mundo</h1>
+            <nav class="nav-items">><a href="/countries/new">Add Country</a></nav>
+        </header>
+        <main>
+        <ul class="country-list">
+            <% country.forEach(country=> { %>
+                <li>
+                    <a href="/countries/<%=country._id%>">
+                        <%=country.name; %>
+                    </a></br>
+                    <a href="/countries/<%=country._id%>"><img src="<%=country.img%>" alt=""></a></br>
+
+                </li></br>
+                <% }) %>
+        </ul>
+        </main>
+    </div>
 </body>
+
 </html>

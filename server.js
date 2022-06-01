@@ -7,7 +7,7 @@ require('dotenv').config();
 const countriesController = require('./controllers/countries')
 const countrySeed = require("./models/countrySeed.js")
 
-const PORT = process.env.PORT;
+const PORT = 3001;
 
 //Connection to mongoose
 mongoose.connect(process.env.DATABASE_URL, {
@@ -24,7 +24,7 @@ db.on("disconnected", () => console.log("mongo has disconnected"));
 
 //Middleware
 app.use(methodOverride('_method'));
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //Controllers

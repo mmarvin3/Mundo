@@ -1,4 +1,42 @@
-.header {
+/* .nav-header {
+    display: flex;
+    flex-direction: row;
+    transform-origin: right;
+} */
+
+/* INDEX */
+.banner {
+    background-image: url(https://i.imgur.com/4gL9tVr.jpeg);
+    height: 100vh;
+    max-height: 700px;
+    width: 100vw;
+    align-items: flex-start;
+}
+
+.title-header {
     display: flex;
     justify-content: center;
+}
+
+.country-list {
+    list-style: none;
+}
+
+/* SHOW */
+main{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 3em;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 1px 1px 5px #888;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+    width: 300px;
+    height: 200 px;
 }
