@@ -31,13 +31,30 @@ router.get('/new', (req, res) => {
     res.render('new.ejs');
 })
 
-//D
+//Delete
+router.delete('/:id', (req, res) => {
+    Country.findByIdAndRemove(req.params.id, (err, data) => {
+        res.redirect('/countries')
+    })
+})
 
 //U
 
-//C
+//Create
+router.post('/', (req, res) => {
+    Country.create(req.body, (error, createdCountry) => {
+        res.redirect('/countries')
+    })
+})
 
-//E
+//Edit
+router.get('/:id/edit', (req, res) => {
+    Country.findById(req.params.id, (error, foundCountry) => {
+        res.render("edit.ejs", {
+            country: foundCountry,
+        })
+    })
+})
 
 //Show
 router.get('/:id', (req, res) => {
