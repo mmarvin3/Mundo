@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
 </head>
-<body>
-    <a class="title-header" href="/countries"><h1>Mundo</h1></a>
-    <main class="show-main">
-    <h2>Edit Country</h2>
-    <p><%=country.name%></p></br>
-    <form action="/countries/<%=country._id%>?_method=PUT" method="POST">
-        Name: <input type="text" name="name" value="<%=country.name%>"><br/>
-        Image: <input type="text" name="img" value="<%=country.img%>"><br/>
-        Capital: <input type="text" name="capital" value="<%=country.capital%>"><br/>
-        <input type="submit" value="Submit Changes">
 
-    </form>
-</main>
+<body>
+    <a class="title-header" href="/countries">
+        <h1>Mundo</h1>
+    </a>
+    <main class="show-main">
+        <h2>Edit Country</h2>
+        <p>
+            <%=country.name%>
+        </p></br>
+        <form action="/countries/<%=country._id%>?_method=PUT" method="POST">
+            Name: <input type="text" name="name" value="<%=country.name%>"><br />
+            Image: <input type="text" name="img" value="<%=country.img%>"><br />
+            Capital: <input type="text" name="capital" value="<%=country.capital%>"><br />
+            <input type="submit" value="Submit Changes">
+
+        </form>
+    </main>
 </body>
+
 </html>

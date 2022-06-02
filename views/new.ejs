@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
 </head>
-<body>
-    <a class="title-header" href="/countries"><h1>Mundo</h1></a>
-    <main class="show-main">
-    <h2>New Country</h2>
-    <form action="/countries" method="POST">
-        Name: <input type="text" name="name"></br>
-        Flag Image: <input type="text" name="img"></br>
-        Capital: <input type="text" name="capital"></br>
-        <input type="submit" name="" value="Add Country">
 
-    </form>
-</main>
+<body>
+    <a class="title-header" href="/countries">
+        <h1>Mundo</h1>
+    </a>
+    <main class="show-main">
+        <h2>New Country</h2>
+        <form action="/countries" method="POST">
+            Name: <input type="text" name="name"></br>
+            Flag Image: <input type="text" name="img"></br>
+            Capital: <input type="text" name="capital"></br>
+            <input type="submit" name="" value="Add Country">
+
+        </form>
+    </main>
 </body>
+
 </html>

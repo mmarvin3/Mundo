@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,17 +20,17 @@
             <nav class="nav-items">><a href="/countries/new">Add Country</a></nav>
         </header>
         <main>
-        <ul class="country-list">
-            <% country.forEach(country=> { %>
-                <li>
-                    <a href="/countries/<%=country._id%>">
-                        <%=country.name; %>
-                    </a></br>
-                    <a href="/countries/<%=country._id%>"><img src="<%=country.img%>" alt=""></a></br>
+            <ul class="country-list">
+                <% country.forEach(country=> { %>
+                    <li>
+                        <a href="/countries/<%=country._id%>">
+                            <%=country.name; %>
+                        </a></br>
+                        <a href="/countries/<%=country._id%>"><img src="<%=country.img%>" alt=""></a></br>
 
-                </li></br>
-                <% }) %>
-        </ul>
+                    </li></br>
+                    <% }) %>
+            </ul>
         </main>
     </div>
 </body>
