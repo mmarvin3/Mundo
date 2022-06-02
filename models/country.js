@@ -5,7 +5,8 @@ const countrySchema = new mongoose.Schema(
     {
         name: {type: String},
         img: {type: String},
-        capital: {type: String}
+        capital: {type: String},
+        population: {type: String},
     }
 )
 
