@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <a href="/countries"><h1>Mundo</h1></a>
-    <main>
+    <a class="title-header" href="/countries"><h1>Mundo</h1></a>
+    <main class="show-main">
         <h2><%=country.name%></h2></br>
-                <img src="<%=country.img%>" alt=""></br>
+                <img class="show-flag" src="<%=country.img%>" alt=""></br>
                 <a href="/countries/<%=country._id%>/edit"><button>EDIT</button></a></br>
                 <p>Capital: <%=country.capital%>
                 </p>

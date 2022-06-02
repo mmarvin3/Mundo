@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Edit Country</h1>
-    <a href="/countries">Home</a>
-    <h2><%=country.name%></h2></br>
+    <a class="title-header" href="/countries"><h1>Mundo</h1></a>
+    <main class="show-main">
+    <h2>Edit Country</h2>
+    <p><%=country.name%></p></br>
     <form action="/countries/<%=country._id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" value="<%=country.name%>"><br/>
         Image: <input type="text" name="img" value="<%=country.img%>"><br/>
@@ -18,5 +19,6 @@
         <input type="submit" value="Submit Changes">
 
     </form>
+</main>
 </body>
 </html>
